@@ -18,6 +18,6 @@ Route::post('/login', 'App\Http\Controllers\AuthController@login');
 Route::post('register', 'App\Http\Controllers\AuthController@register');
 Route::post('/logout', 'App\Http\Controllers\AuthController@logout');
 Route::post('/storeTask', 'App\Http\Controllers\tasksController@store');
-Route::get('/index', 'App\Http\Controllers\tasksController@index');
+Route::get('/getAllTasks', 'App\Http\Controllers\tasksController@index');
 Route::put('/updateTask/{id}', 'App\Http\Controllers\tasksController@updateData');
 Route::delete('/delete/{id}', 'App\Http\Controllers\tasksController@destroy');

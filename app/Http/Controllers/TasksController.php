@@ -63,6 +63,7 @@ class TasksController extends Controller
             
    
     }
+    
     public function getAllData(){
         $data=tasks::all();
         if(!$data){

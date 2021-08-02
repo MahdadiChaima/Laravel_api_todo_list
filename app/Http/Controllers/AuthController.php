@@ -48,7 +48,7 @@ public function __construct() {
     public function register(Request $request) {
     $validator = Validator::make($request->all(), [
     'email' => 'required|string|email|max:100|unique:users',
-    'password' => 'required|string|min:6',
+    'password' => 'required|string|min:6|confirmed',
     ]);
     
     if($validator->fails()){
